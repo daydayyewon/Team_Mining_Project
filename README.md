@@ -1,11 +1,13 @@
 📸Text Mining Team Project
 ==========================
 
-Topic
------
+Project Topic
+-------------
+Anaylysis of High-Score Words for Interview Success prediction
 
-Objective
+Project Objective
 ---------
+To identify key words frequently used by high-scoring interviewees, providing guidance on vocabulary and expressions that can enhance interview scores across job group.
 
 
 
