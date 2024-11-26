@@ -1,4 +1,5 @@
-Head
-====
+Text Mining Team Project
+========================
+
 
 
