@@ -1,0 +1,97 @@
+library(jsonlite)
+library(zip)
+library(dplyr)
+library(magrittr)
+library(stringr)
+library(tidyr)
+library(tm)
+library(tidytext)
+library(KoNLP) 
+library(extrafont)
+library(showtext)
+library(RmecabKo)
+library(reticulate)
+library(ggplot2)
+library(wordcloud2)
+library(ggwordcloud)
+library(patchwork)
+library(topicmodels)
+library(gridExtra)
+library(LDAvis)
+library(stm)
+library(keras)
+library(igraph)
+library(NLP)
+library(ggraph)
+library(widyr)
+
+#######################################################
+###############     0. Data loading     ###############
+#######################################################
+
+# Step1. Set the data file direction
+directory_path <- "/Users/yewonsday/Desktop/TextMining/TM_Proj/Project_data"
+
+# Step2. Get list of all folders in the directory
+subfolders <- list.dirs(path = directory_path, recursive = TRUE, full.names = TRUE)[21:48]
+
+# Step3. Save JSON file in each subfolder
+subfolder_json_data <- lapply(subfolders, function(subfolder) {
+  # Get JSON file names
+  json_files <- list.files(path = subfolder, pattern = "\\.json$", full.names = TRUE)
+  # Read JSON file
+  json_data <- lapply(json_files, function(file) {
+    tryCatch({
+      fromJSON(file, flatten = TRUE)
+    }, error = function(e) {
+      # When an error occurs, print a message and return NULL
+      message(sprintf("Error occurred: %s\nSkipping the file. (%s)", e$message, file))
+      NULL
+    })
+  })
+  # Transform to list
+  list(subfolder = subfolder, json_data = json_data)
+})
+
+# Step4. Create data_frame containing data we need
+data_frame <- do.call(rbind, lapply(subfolder_json_data, function(folder) {
+  # Extract file path
+  subfolder_path <- folder$subfolder
+  # Extract question text
+  questions <- unlist(lapply(folder$json_data, function(json) {
+    tryCatch({
+      json$dataSet$question$raw$text
+      # Error case
+    }, error = function(e) {
+      NULL
+    })
+  }), use.names = FALSE)
+  # Combine subfolder path and question text
+  if (length(questions) > 0) {
+    data.frame(Subfolder = subfolder_path, Question = questions, stringsAsFactors = FALSE)
+    # Return NULL if there is no question
+  } else {
+    NULL  
+  }
+}))
+
+# Step5. Create new column containing new information using file path column
+data_frame %<>%
+  mutate(
+    Category = str_match(Subfolder, "TL_\\d+\\.([A-Za-z]+)_([A-Za-z]+)_([A-Za-z]+)")[, 2],
+    Gender = str_match(Subfolder, "TL_\\d+\\.([A-Za-z]+)_([A-Za-z]+)_([A-Za-z]+)")[, 3],
+    Experience = str_match(Subfolder, "TL_\\d+\\.([A-Za-z]+)_([A-Za-z]+)_([A-Za-z]+)")[, 4]
+  ) %>% select(-1) %>% distinct()
+
+# Step6. Check the result
+data_frame %>% head()
+
+######## Font installation for Korean display ########
+
+font_import(prompt = FALSE)
+loadfonts(device = "pdf")
+fonts()
+
+font_add_google("Nanum Gothic", "nanum")
+showtext_auto()
+font_families()
