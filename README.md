@@ -137,8 +137,11 @@ Edges, Nodes, Labels
 
 - This will help simulate real interview situations more realistically in the future.
 
+---
 
-
+## 🌟 License
+This project is distributed under the MIT License.
+For more details, refer to the [LICENSE file](https://github.com/daydayyewon/Text_Mining_Project/blob/main/stopwords-ko.txt).
 
 
 
