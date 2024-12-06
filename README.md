@@ -140,7 +140,7 @@ Edges, Nodes, Labels
 ---
 
 ## 🌟 License
-This project is distributed under the MIT License.
+This project is distributed under the MIT License.<br/>
 For more details, refer to the [LICENSE file](https://github.com/daydayyewon/Text_Mining_Project/blob/main/stopwords-ko.txt).
 
 
