@@ -46,7 +46,7 @@ Analyze domain-specific language patterns to better understand each field’s pr
 - ## Most frequently used in Job interview
 ![이미지 2024  12  6  오후 9 57](https://github.com/user-attachments/assets/1e9ece33-d0a3-47e1-96a8-8279d5ee7811)
 
-- # Insight
+- ### Insight
 Interview questions appear to focus on evaluating <core competencies> related to actual job performance, such as experience, problem-solving, and stress management. Therefore, interviewees should prepare specific examples of their problem-solving experiences and the lessons learned from them. It also seems important for interviewees to effectively express their psychological resilience, including examples of how they handled <stressful situations>. Based on this data, it is expected to be useful for analyzing question trends by job category or generating tailored question examples.
 
 ---
