@@ -49,10 +49,19 @@ Analyze domain-specific language patterns to better understand each field’s pr
 - # Insight
 Interview questions appear to focus on evaluating <core competencies> related to actual job performance, such as experience, problem-solving, and stress management. Therefore, interviewees should prepare specific examples of their problem-solving experiences and the lessons learned from them. It also seems important for interviewees to effectively express their psychological resilience, including examples of how they handled <stressful situations>. Based on this data, it is expected to be useful for analyzing question trends by job category or generating tailored question examples.
 
+---
 
 ## 💼 3) Data Analysis
 ### ☘️ TF-IDF 
-![이미지 2024  12  6  오후 10 31](https://github.com/user-attachments/assets/f422f253-1b8c-439d-b7cc-0731a46a7505)
+- Keyword Analysis by Job Category
+- Keyword Analysis by Gender
+- Keyword Analysis by Experienced
+
+**TF-IDF step**
+- Word frequency calculation
+- Delete additional stopword
+- Calculate TF-IDF
+- Visualization: Top 10 Keywords by TF-IDF
 
 #### 1️⃣ Analysis of Keywords by Job Categor
 ![이미지 2024  12  3  오전 5 31](https://github.com/user-attachments/assets/cff2cced-7e15-499e-b899-999e0acf3bbf)
@@ -73,6 +82,8 @@ Depending on the key skills emphasized in each role, candidates should prepare e
 #### Insights
 - Experienced candidates should highlight examples of problem-solving and strengths demonstrated in real-world scenarios.
 - Inexperienced candidates should showcase adaptability and learning potential through relevant examples.
+  
+---
 
 ### ☘️ Topic Modeling
 **1️⃣ LDA Model**: Identified latent topics from the dataset to uncover hidden themes.  
@@ -87,10 +98,18 @@ Depending on the key skills emphasized in each role, candidates should prepare e
 ### Results for k = 2 ~ 4
 ![이미지 2024  12  6  오후 10 54](https://github.com/user-attachments/assets/d84e0cdd-55f0-4aa6-b37d-2ae7eb3a4f10)
 
-**2️⃣ STM Model**: Enhanced topic analysis by integrating metadata such as job roles, gender, and experience.
+<img width="968" alt="LDA Example" src="https://github.com/user-attachments/assets/f41485ba-a908-4c7d-aaf5-824f8048d5b1">
+
+---
+
+### 2️⃣ STM Model 
+Enhanced topic analysis by integrating metadata such as job roles, gender, and experience.
+
 ![이미지 2024  12  6  오후 11 00](https://github.com/user-attachments/assets/eccb29a8-224c-4265-bff8-83074ac5424d)
 ![이미지 2024  12  6  오후 10 59 (1)](https://github.com/user-attachments/assets/b4fc3a76-528a-4603-a843-75c0ec674c1d)
 ![이미지 2024  12  6  오후 10 59](https://github.com/user-attachments/assets/087797cc-1bdc-4ed5-bba3-ac174de97046)
+
+
 
 ### ☘️ Network Analysis
 **Network Analysis Step**
@@ -111,10 +130,13 @@ Edges, Nodes, Labels
 ![이미지 2024  12  6  오후 11 04](https://github.com/user-attachments/assets/8e4c8dcc-38b2-4df1-a760-a15cade20688)
 
 
-## 🗝️ Key Findings
-- **Topic Modeling**: Identified 5 distinct topics, including 'customer feedback' and 'service quality.'
-- **Sentiment Analysis**: Majority of the reviews were positive, with 20% indicating critical feedback.
-- **Word Frequency**: Common terms included "service," "quality," and "experience," highlighting the importance of user satisfaction.
+## 🧑‍🏫 4) Conclusion
+- By using various analysis approaches, you can find out important interview keywords for each job type and create expected questions based on these.
+
+- While we haven’t reached the stage of generating interview questions, we were able to discover the possibility of connecting with a model that generates questions using keywords.
+
+- This will help simulate real interview situations more realistically in the future.
+
 
 
 
