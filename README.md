@@ -40,6 +40,7 @@ Analyze domain-specific language patterns to better understand each field’s pr
 ![이미지 2024  12  6  오후 9 56 (1)](https://github.com/user-attachments/assets/19ef2d45-d841-4ef9-bfaf-04387296b5f6)
 ![이미지 2024  12  6  오후 9 57](https://github.com/user-attachments/assets/1e9ece33-d0a3-47e1-96a8-8279d5ee7811)
 
+
 ## 🔎 Features 
 - **Text Preprocessing**: Data cleaning, tokenization, and stopword removal.
 - **Topic Modeling**: Utilizing Latent Dirichlet Allocation (LDA) for topic extraction.
