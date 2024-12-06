@@ -63,23 +63,23 @@ Interview questions appear to focus on evaluating <core competencies> related to
 - Calculate TF-IDF
 - Visualization: Top 10 Keywords by TF-IDF
 
-#### 1️⃣ Analysis of Keywords by Job Categor
+#### 1️⃣ Analysis of Keywords by Job Category
 ![이미지 2024  12  3  오전 5 31](https://github.com/user-attachments/assets/cff2cced-7e15-499e-b899-999e0acf3bbf)
 
-#### Insights  
+#### Category Insights  
 Depending on the key skills emphasized in each role, candidates should prepare experiences and portfolios that demonstrate technical expertise and professional skills. For instance, candidates for design roles should highlight creativity and trend awareness, while those in ICT roles should focus on programming skills and algorithm understanding.
 
-#### 2️⃣ Alysis of key words by Gend
+#### 2️⃣ Alysis of key words by Gender
 ![이미지 2024  12  3  오전 2 46](https://github.com/user-attachments/assets/bf6ad743-f0b1-463b-8988-2a5a840d00a1)
 
-#### Insights
+#### Gender Insights
 - Female interview questions often focus on social ethics (e.g., corruption, public office) and social media or personal branding (e.g., Instagram, sales). This suggests women may be more associated with roles emphasizing social responsibility and digital marketing.
 - Male interview questions tend to focus on technical, economic, and business-related skills (e.g., strengths, profits, welding). This suggests men are more likely to be in roles that prioritize technical expertise and economic outcomes.
 
 #### 3️⃣ Analysis of Key Keywords by Job Experienced
 ![이미지 2024  12  3  오전 6 05](https://github.com/user-attachments/assets/76bdb4f2-c025-4ab6-8d31-c308a2b49978)
 
-#### Insights
+#### Job Experienced Insights
 - Experienced candidates should highlight examples of problem-solving and strengths demonstrated in real-world scenarios.
 - Inexperienced candidates should showcase adaptability and learning potential through relevant examples.
   
