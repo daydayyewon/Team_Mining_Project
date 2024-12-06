@@ -35,6 +35,10 @@ Analyze domain-specific language patterns to better understand each field’s pr
   - Visualization: ggplot2, patchwork, ggraph
   - Text Analysis: tm, tidytext, KoNLP, topicmodels
   - Machine Learning: LDAvis, stm
+ 
+![이미지 2024  12  6  오후 9 56](https://github.com/user-attachments/assets/c38967d4-2d8d-4550-b079-577d8ed7f17e)
+![이미지 2024  12  6  오후 9 56 (1)](https://github.com/user-attachments/assets/19ef2d45-d841-4ef9-bfaf-04387296b5f6)
+![이미지 2024  12  6  오후 9 57](https://github.com/user-attachments/assets/1e9ece33-d0a3-47e1-96a8-8279d5ee7811)
 
 ## 🔎 Features 
 - **Text Preprocessing**: Data cleaning, tokenization, and stopword removal.
